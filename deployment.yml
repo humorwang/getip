@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: getip
-          image: typ431127/getip:0.1.5
+          image: humorwang/getip:0.1.5
           ports:
             - containerPort: 8080
