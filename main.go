@@ -93,7 +93,7 @@ func response(c *gin.Context) {
 	// 	getIpInfo(ip))
 	log.Printf("RealIp:%s IpInfo:%s", RealIp, getIpInfo(RealIp))
 	if format == "text" {
-		c.String(response_code, "ip:%s address: %s", RealIp, ipInfo)
+		c.String(response_code, "%s %s", RealIp, ipInfo)
 	} else {
 		c.JSON(response_code, response_json)
 	}
